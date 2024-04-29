@@ -22,8 +22,6 @@ Let us consider an example. Wrapping class Node looks the same as before
 ## Listing 68 BGW-Stack/Node.java  
 
 ```java
-// BGW-Stack/Node.java
- 
   // could be private static inner class of MyStack
 public class Node {
     private int data;
@@ -45,8 +43,6 @@ and the implementation is very simple
 ## Listing 69 BGW-Stack/MyStack.java
 
 ```
-// BGW-Stack/MyStack.java
- 
 public class MyStack {
     private Node head = null;
     public void push(int data) {
@@ -68,6 +64,16 @@ In Main, we test our stack:
 ## Listing 70 BGW-Stack/Main.java
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        MyStack st = new MyStack();
+        st.push(1);
+        st.push(8);
+        st.push(0);
+        while (!st.empty())
+            System.out.println("popping " + st.pop());
+    }
+}
 
 ```
 
