@@ -42,7 +42,7 @@ and the implementation is very simple
 
 ## Listing 69 BGW-Stack/MyStack.java
 
-```
+```java
 public class MyStack {
     private Node head = null;
     public void push(int data) {
